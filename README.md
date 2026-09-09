@@ -44,6 +44,7 @@ The filenames in the media directory list below have been prefixed with sequence
 301-psy-gangnam_style.252.youtube
 401-phpinfo.php
 501-lorem_ipsum.txt
+601-samplelib_com-trees-road-1080p.5.mp4
 ```
 
 #### Directory Example 2
@@ -57,6 +58,7 @@ mallard_duck_public_domain.jpg
 merriam-webster_word_of_the_day.url
 phpinfo.php
 psy-gangnam_style.252.youtube
+samplelib_com-trees-road-1080p.5.mp4
 ```
 
 ## Supported File Types/Extensions
@@ -64,6 +66,8 @@ psy-gangnam_style.252.youtube
 Unless otherwise noted, the contents of each media file will be embedded as-is into the display template.
 
 * `gif`, `jpg`, `png` = Images.
+
+* `mp4`, `ogg` = Videos.
 
 * `html` = Basic inline HTML. No `<html>`, `<head>` or `<body>` tags; however, `<style>` is permitted.
 
@@ -73,7 +77,7 @@ Unless otherwise noted, the contents of each media file will be embedded as-is i
 
 * `url` = URL of another website. Embedded using `<iframe>`.
 
-* `youtube` = ID string of a YouTube video. (eg. dQw4w9WgXcQ) Do not use the full URL or embed code. The video will auto-play with no visible controls, captions (if available) enabled, and no tracking cookies. If you require different player settings, copy and paste the appropriate embed code in a `html`-type media file instead.
+* `youtube`, `yt` = ID string of a YouTube video. (eg. dQw4w9WgXcQ) Do not use the full URL or embed code. The video will auto-play with no visible controls, captions (if available) enabled, and no tracking cookies. If you require different player settings, copy and paste the appropriate embed code in a `html`-type media file instead.
 
 ## Running the Display
 
@@ -97,6 +101,6 @@ This utility is licensed under the GNU Public License (GPL) version 3. Refer to 
 
 ## Copyright & Contact
 
-Copyright (C) 2022  Vaughan Memorial Library, Acadia University
+Copyright (C) 2022 Vaughan Memorial Library, Acadia University
 * https://library.acadiau.ca
 * library-systems@acadiau.ca

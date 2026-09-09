@@ -125,6 +125,12 @@ else {
         case 'png':
           echo '<img src="' . $display_content['path'] . '">';
           break;
+        case 'mp4':
+          echo '<video autoplay><source src="' . $display_content['path'] . '" type="video/mp4">Cannot play MP4: Your browser does not support the video tag.</video>';
+          break;
+        case 'ogg':
+          echo '<video autoplay><source src="' . $display_content['path'] . '" type="video/ogg">Cannot play OGG: Your browser does not support the video tag.</video>';
+          break;
         case 'html':
         case 'php':
           include($display_content['path']);
@@ -136,6 +142,7 @@ else {
           echo '<iframe src="' . file_get_contents($display_content['path']) . '" frameborder="0"></iframe>';
           break;
         case 'youtube':
+        case 'yt':
           echo '<iframe 
             src="https://www.youtube-nocookie.com/embed/' . file_get_contents($display_content['path']) . '?rel=0&controls=0&showinfo=0&autoplay=1&cc_load_policy=1" 
             frameborder="0" allow="autoplay; encrypted-media"></iframe>';
